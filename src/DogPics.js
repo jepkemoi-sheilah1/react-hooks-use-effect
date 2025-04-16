@@ -7,6 +7,8 @@ function DogPics() {
 
   useEffect(() => {
     console.log("useEffect");
+    
+    // This will run after every render
     fetch("https://dog.ceo/api/breeds/image/random/3")
       .then((r) => r.json())
       .then((data) => {
